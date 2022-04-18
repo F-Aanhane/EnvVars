@@ -11,7 +11,10 @@ An exercise to learn trainees how environment variables work. Used in Veneficus 
 
 # Questions
   a. What is the response from the data request?
+  
   b. Take a look at mock_api.credential_store.py. The username/passwords are encoded, why would an API do that?
+  
   c. Here is publicly available encoding method used. Why would that in real-life situation be unwise?
+  
   d. What encoding is used? Look in mock_api.functions.py for hints
   
