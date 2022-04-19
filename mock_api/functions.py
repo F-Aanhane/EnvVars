@@ -34,8 +34,8 @@ def _pwd_generator(size=6, chars=string.ascii_uppercase + string.digits):
 def authenticate(credentials: list):
     encoded_username = _encode_creds(credentials[0])
     try:
-        encoded_pwd = credential_store.pairs.get(encoded_username)
-        pwd = _decode_creds(encoded_pwd)
+        encoded_pwd = credential_store.pairs.get(encoded_username[0])
+        pwd = _decode_creds(encoded_pwd).pop()
         if credentials[1] == pwd:
             global _AUTHENTICATED
             _AUTHENTICATED = True
@@ -44,16 +44,6 @@ def authenticate(credentials: list):
             return print('Authentication failed')
     except:
         raise ValueError('Wrong username')
-
-
-def reset_password(credentials: list):
-    if _AUTHENTICATED:
-        new_pwd = _pwd_generator()
-        encoded_credentials = _encode_creds(credentials[0], new_pwd)
-        credential_store.pairs.update([encoded_credentials])
-        print(new_pwd)
-    else:
-        raise ValueError('Not authenticated. Resetting password failed')
 
 
 def request_data():
