@@ -1,5 +1,4 @@
-from mock_api.functions import request_data, authenticate, reset_password
-import os
+from mock_api.functions import request_data, authenticate
 import ...                          # import dependencies
 
 
@@ -15,9 +14,3 @@ if __name__ == '__main__':
     credentials = ...               # use the fetch_env_vars function
     authenticate(credentials)
     request_data()
-
-    # Uncomment the next line after successfully receiving data
-    #reset_password(...)            # fill in your username and old password with identical data type as authenticate(),
-                                    # and update your .env file accordingly from the terminal
-                                    # After updating your .env file, run file again.
-
