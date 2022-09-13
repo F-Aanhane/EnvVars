@@ -6,7 +6,8 @@ pairs = {
     'amVyb2Vu': 'MTMxNDE1',
     'dGhlcmVzYQ==': 'MTYxNzE4',
     'ZGVubmlz': 'MTkyMDIx',
-    'ZnJhbms=': 'MjIyMzI0'
+    'ZnJhbms=': 'MjIyMzI0',
+    'dmVuZWZpY3Vz': 'dHJhaW5lZQ=='
 }
 
 
