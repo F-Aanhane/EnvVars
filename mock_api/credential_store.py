@@ -1,12 +1,12 @@
 pairs = {
-    'c29ubmll': 'MDEwMjAz',
-    'bmljb2xhYXM=': 'MDQwNTA2',
-    'aGVpbg==': 'MDcwODA5',
-    'cmViZWNjYQ==': 'MTAxMTEy',
-    'amVyb2Vu': 'MTMxNDE1',
+    'TmlnZWw=': 'VGVldXc=',
+    'QXJvbg==': 'U2Nob3Q=',
+    'VG9t': 'Q2FtcGZlbnM=',
+    'TG9pcw==': 'RGVncmFhZg==',
+    'RXZlbGluZQ==': 'VmFubGVldXdlbg==',
     'dGhlcmVzYQ==': 'MTYxNzE4',
     'ZGVubmlz': 'MTkyMDIx',
-    'ZnJhbms=': 'MjIyMzI0',
+    'ZnJhbms=': 'MjIyMzI0'
     'dmVuZWZpY3Vz': 'dHJhaW5lZQ=='
 }
 
