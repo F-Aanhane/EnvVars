@@ -1,10 +1,13 @@
-from mock_api import credential_store
 import random
 import string
 import requests
 import base64
+import json
 
 _AUTHENTICATED = False
+
+with open('mock_api/credential_store.json', 'r') as f:
+    creds = json.load(f)
 
 
 def _encode_creds(*credentials: str):
@@ -34,7 +37,7 @@ def _pwd_generator(size=6, chars=string.ascii_uppercase + string.digits):
 def authenticate(credentials: list):
     encoded_username = _encode_creds(credentials[0])
     try:
-        encoded_pwd = credential_store.pairs.get(encoded_username[0])
+        encoded_pwd = creds.get(encoded_username[0])
         pwd = _decode_creds(encoded_pwd).pop()
         if credentials[1] == pwd:
             global _AUTHENTICATED
