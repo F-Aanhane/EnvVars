@@ -3,9 +3,9 @@ import ...                          # import dependencies
 
 
 def fetch_env_vars():
-    USERNAME = ...                  # fill in right command to fetch username from environment variables
+    THIS_USER = ...                  # fill in right command to fetch username from environment variables
     PASSWORD = ...                  # fill in right command to fetch password from environment variables
-    return [USERNAME, PASSWORD]
+    return [THIS_USER, PASSWORD]
 
 
 if __name__ == '__main__':
